@@ -8,6 +8,7 @@ import Button from "react-bootstrap/Button";
 import NavbarComponent from "../../Components/navbar/navbarComponent";
 import CardComponent from "../../Components/Cards/cardComponent";
 import TableComponent from "../../Components/table/tableComponent";
+import TooltipComponent from "../../Components/tooltip/tooltipComponent";
 
 export default function Home() {
   const [show, setShow] = useState(false);
@@ -21,7 +22,15 @@ export default function Home() {
       <React.Fragment>
         <Col
           style={{
-            // backgroundColor: "red",
+            marginBottom: "3%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <TooltipComponent />
+        </Col>
+        <Col
+          style={{
             display: "flex",
             justifyContent: "center",
           }}
